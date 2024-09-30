@@ -1,5 +1,5 @@
 def add(a, b):
-    return a + b
+    return a + b + 10 #덧셈 수정
 
 def subtract(a, b):
     return a - b
