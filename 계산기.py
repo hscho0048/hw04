@@ -4,9 +4,18 @@ def add(a, b):
 def subtract(a, b):
     return a - b
 
-if __name__ == "__main__":
-    x = int(input("첫번쨰 숫자를 입력하세요: "))
-    y = int(input("두번째 숫자를 입력하세요: "))
+def multiply(a, b):
+    return a * b
 
-    print(f"Sum: {add(x, y)}")
-    print(f"Difference: {subtract(x, y)}")
+def divide(a, b):
+    if b == 0:
+        return "0으로는 못 나눔"
+    return a / b
+
+x = int(input("첫번쨰 숫자를 입력하세요: "))
+y = int(input("두번째 숫자를 입력하세요: "))
+
+print(f"Multiplication: {multiply(x, y)}")
+print(f"Division: {divide(x, y)}")
+print(f"Sum: {add(x, y)}")
+print(f"Difference: {subtract(x, y)}")
